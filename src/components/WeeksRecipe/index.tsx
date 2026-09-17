@@ -37,7 +37,7 @@ function shuffle(weeklyMeals:Recipe[]) {
   console.log(weeklyMeals.slice(0,7));
   return (weeklyMeals
     .slice(0,7)
-    .map(recipe => <Link to={`${recipe.id}`} key={recipe.id}><RecipeImage recipe={recipe}/></Link> ))
+    .map(recipe => <Link to={`/recipes/${recipe.id}`} key={recipe.id}><RecipeImage recipe={recipe}/></Link> ))
     
 }
 
