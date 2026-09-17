@@ -9,14 +9,14 @@ export default function RecipeCard ({recipe}: CardProps) {
             </div>
             <div>
                 <h2 className='recipe-title' >{recipe.title}</h2>
-                <em>{recipe.course}, Cuisine:{recipe.cuisine} </em>
+                <em role='figure'>{recipe.course}, Cuisine:{recipe.cuisine} </em>
                 <div >
                     <h2>Ingredients list: </h2>
-                    <p dangerouslySetInnerHTML={{ __html: recipe.ingredients }}></p>
+                    <p role='figure2' dangerouslySetInnerHTML={{ __html: recipe.ingredients }}></p>
                 </div>
                 <div >
                     <h2>Instructions:</h2>
-                    <p dangerouslySetInnerHTML={{ __html: recipe.directions }}></p>
+                    <p role='figure3' dangerouslySetInnerHTML={{ __html: recipe.directions }}></p>
                 </div>
             </div>
         </div>
