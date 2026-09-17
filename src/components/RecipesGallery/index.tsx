@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { Recipe } from '../../types';
+import RecipeImage  from '../RecipeImage';
+import { Link } from 'react-router-dom';
 
 export default function RecipesGallery() {
 
@@ -19,7 +21,7 @@ displayRecipes()
 
   return (
    <div className='recipes' data-testids='recipes-test'>
-        {recipes.map(recipe => <p>{recipe.title}</p>)}
+        {recipes.map(recipe => <Link to={`${recipe.id}`} key={recipe.id}><RecipeImage recipe={recipe}/></Link> )}
    </div>
   )
 }
