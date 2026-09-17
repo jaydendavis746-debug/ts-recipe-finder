@@ -5,7 +5,7 @@ export default function RecipeImage({recipe}: ImageProps) {
 
   return (
 	<div className='recipe-image'>
-		{recipe.photoUrl ? <img src={recipe.photoUrl} alt={recipe.title}/> : <h2>{recipe.title}</h2>}
+		{recipe.photoUrl ? <img  src={recipe.photoUrl} alt={recipe.title}/> : null}
         {/* <h2>{recipe.title}</h2> */}
 	</div>
   )
