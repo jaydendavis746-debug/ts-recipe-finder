@@ -8,7 +8,7 @@ export default function RecipeCard ({recipe}: CardProps) {
                 <img src={recipe.photoUrl}></img>
             </div>
             <div>
-                <h2>{recipe.title}</h2>
+                <h2 className='recipe-title' >{recipe.title}</h2>
                 <em>{recipe.cuisine}, {recipe.course}</em>
                 <div dangerouslySetInnerHTML={{ __html: recipe.ingredients }}></div>
                 <div dangerouslySetInnerHTML={{ __html: recipe.directions }}></div>

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import type { Recipe } from '../../types';
 import { Link } from 'react-router-dom';
-import RecipeImage from '../RecipeImage';
+import RecipeCard from '../RecipeCard';
 
 export default function SearchWidget() {
     
@@ -47,7 +47,7 @@ export default function SearchWidget() {
                 <input type="submit" value="Search" />
             </form>
             {/* <ShowList /> */}
-            {recipeData.map(recipe => <Link to={`${recipe.id}`} key={recipe.id}><RecipeImage recipe={recipe}/></Link> )}
+            {recipeData.map(recipe => <Link to={`${recipe.id}`} key={recipe.id}><RecipeCard recipe={recipe}/></Link> )}
         </>
     );
 }
