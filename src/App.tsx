@@ -1,5 +1,5 @@
 import { Header } from './components'
-import { HomePage } from './pages'
+import { HomePage, RecipesPage } from './pages'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 
@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Header />} >
           <Route index element={<HomePage />} />
+          <Route path='/recipes' element={<RecipesPage />} />
 
         </Route>
       </Routes>

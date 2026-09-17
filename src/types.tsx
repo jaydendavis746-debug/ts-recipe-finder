@@ -1,0 +1,33 @@
+export type Recipe = {
+  id: number;
+  title: string;
+  course: string;
+  cuisine: string;
+  mainIngredient: string;
+  description: string;
+  source: string;
+  url: string;
+  urlHost: string;
+  prepTime: number;
+  cookTime: number;
+  totalTime: number;
+  servings: number;
+  yield: string;
+  ingredients: string;
+  directions: string;
+  tags: string;
+  rating: string;
+  publicUrl: string;
+  photoUrl: string;
+  private: "yes" | "no";
+  nutritionalScoreGeneric: string;
+  calories: number | null;
+  fat: number | null;
+  cholesterol: number | null;
+  sodium: number | null;
+  sugar: number | null;
+  carbohydrate: number | null;
+  fiber: number | null;
+  protein: number | null;
+  cost: number | null;
+}
